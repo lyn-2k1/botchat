@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @trainbot.message %>
+</p>
+
+<p>
+  <strong>Intent:</strong>
+  <%= @trainbot.intent %>
+</p>
+
+<p>
+  <strong>Entity:</strong>
+  <%= @trainbot.entity %>
+</p>
+
+<p>
+  <strong>Start:</strong>
+  <%= @trainbot.start %>
+</p>
+
+<p>
+  <strong>End:</strong>
+  <%= @trainbot.end %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @trainbot.body %>
+</p>
+
+<%= link_to 'Edit', edit_trainbot_path(@trainbot) %> |
+<%= link_to 'Back', trainbots_path %>

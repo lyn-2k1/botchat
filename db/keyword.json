@@ -1,0 +1,75 @@
+[
+  {
+    "entities": "findschool",
+    "keyword": [
+      {
+        "keyword": "tìm trường",
+        "synonyms": "cần tìm"
+      },
+      {
+        "keyword": "tìm trường",
+        "synonyms": "tìm trường"
+      },
+      {
+        "keyword": "tìm trường",
+        "synonyms": "tìm cho con trường"
+      },{
+        "keyword": "tìm trường",
+        "synonyms": "tính cho đi nhà trẻ"
+      },
+      {
+        "keyword": "tìm trường",
+        "synonyms": "tính cho bé đi học"
+      },
+      {
+        "keyword": "học phí",
+        "synonyms": "học phí"
+      },
+      {
+        "keyword": "học phí",
+        "synonyms": "chi phí"
+      }
+    ]
+  },
+  {
+    "entities": "reviewschool",
+    "keyword": [
+      {
+        "keyword": "review trường",
+        "synonyms": "xin ít review"
+      },
+      {
+        "keyword": "review trường",
+        "synonyms": "giới thiệu trường"
+      },
+      {
+        "keyword": "review trường",
+        "synonyms": "review"
+      },
+      {
+        "keyword": "tìm hiểu trường",
+        "synonyms": "tìm hiểu trường"
+      },
+      {
+        "keyword": "tìm hiểu trường",
+        "synonyms": "xin vài trường tốt"
+      },
+      {
+        "keyword": "tìm hiểu trường",
+        "synonyms": "thông tin trường"
+      },
+      {
+        "keyword": "tư vấn",
+        "synonyms": "tư vấn"
+      },
+      {
+        "keyword": "tư vấn",
+        "synonyms": "chia sẻ kinh nghiệm"
+      },
+      {
+        "keyword": "tư vấn",
+        "synonyms": "tham khảo"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2 @@
+class Facebookapi < ApplicationRecord
+end

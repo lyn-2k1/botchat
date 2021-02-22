@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @faceapi.message %>
+</p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @faceapi.idd %>
+</p>
+
+<p>
+  <strong>Pheduyet:</strong>
+  <%= @faceapi.pheduyet %>
+</p>
+
+<%= link_to 'Edit', edit_faceapi_path(@faceapi) %> |
+<%= link_to 'Back', faceapis_path %>

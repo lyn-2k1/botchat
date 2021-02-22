@@ -1,0 +1,47 @@
+<%= form_with(model: trainbot, local: true) do |form| %>
+  <% if trainbot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(trainbot.errors.count, "error") %> prohibited this trainbot from being saved:</h2>
+
+      <ul>
+        <% trainbot.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :message %>
+    <%= form.text_area :message %>
+  </div>
+
+  <div class="field">
+    <%= form.label :intent %>
+    <%= form.text_field :intent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :entity %>
+    <%= form.text_field :entity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start %>
+    <%= form.text_field :start %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end %>
+    <%= form.text_field :end %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_field :body %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

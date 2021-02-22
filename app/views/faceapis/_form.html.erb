@@ -1,0 +1,32 @@
+<%= form_with(model: faceapi, local: true) do |form| %>
+  <% if faceapi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(faceapi.errors.count, "error") %> prohibited this faceapi from being saved:</h2>
+
+      <ul>
+        <% faceapi.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :message %>
+    <%= form.text_field :message %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.text_field :id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pheduyet %>
+    <%= form.check_box :pheduyet %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

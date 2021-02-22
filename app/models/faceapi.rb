@@ -1,0 +1,2 @@
+class Faceapi < ApplicationRecord
+end

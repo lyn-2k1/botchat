@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Faceapis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Message</th>
+      <th>Id</th>
+      <th>Pheduyet</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @faceapis.each do |faceapi| %>
+      <tr>
+        <td><%= faceapi.message %></td>
+        <td><%= faceapi.idd %></td>
+        <td><%= faceapi.pheduyet %></td>
+        <td><%= link_to 'Show', faceapi %></td>
+        <td><%= link_to 'Edit', edit_faceapi_path(faceapi) %></td>
+        <td><%= link_to 'Destroy', faceapi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Faceapi', new_faceapi_path %>

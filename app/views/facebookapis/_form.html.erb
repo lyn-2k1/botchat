@@ -1,0 +1,27 @@
+<%= form_with(model: facebookapi, local: true) do |form| %>
+  <% if facebookapi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(facebookapi.errors.count, "error") %> prohibited this facebookapi from being saved:</h2>
+
+      <ul>
+        <% facebookapi.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :post %>
+    <%= form.text_field :post %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pheduyet %>
+    <%= form.check_box :pheduyet %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @uttrance.message %>
+</p>
+
+<p>
+  <strong>Confidence:</strong>
+  <%= @uttrance.confidence %>
+</p>
+
+<%= link_to 'Edit', edit_uttrance_path(@uttrance) %> |
+<%= link_to 'Back', uttrances_path %>

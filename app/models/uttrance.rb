@@ -1,0 +1,2 @@
+class Uttrance < ApplicationRecord
+end

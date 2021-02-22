@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Facebookapis</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Post</th>
+      <th>Pheduyet</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @facebookapis.each do |facebookapi| %>
+      <tr>
+        <td><%= facebookapi.post %></td>
+        <td><%= facebookapi.pheduyet %></td>
+        <td><%= link_to 'Show', facebookapi %></td>
+        <td><%= link_to 'Edit', edit_facebookapi_path(facebookapi) %></td>
+        <td><%= link_to 'Destroy', facebookapi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Facebookapi', new_facebookapi_path %>
